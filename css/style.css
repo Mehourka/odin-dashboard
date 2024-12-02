@@ -1,16 +1,18 @@
 :root {
-  --main-col: #cedfed;
+  --main-col: #5791d0;
   --sec-col: #efac23;
   --thr-col: #8e8ae4;
+  --white: #fefefe;
 }
 
 * {
-  box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
-body{
-  padding: 0px;
-  margin: 0px;
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main  {
@@ -24,12 +26,48 @@ body{
 }
 
 .header {
-	background-color: var(--main-col);
+	background-color: var(--white);
 	grid-column: 2;
 }
 
 .sidebar {
-  background: var(--sec-col);
+  padding: 24px 32px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  font-weight: 800
+}
+
+.sidebar li{
+
+	font-weight: 600;
+	list-style-type: none;
+	text-decoration: none;
+  margin-bottom: .5rem;
+}
+
+.sidebar a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  text-decoration: none;
+  color: var(--white);
+}
+
+.sidebar > div {
+	margin-bottom: 50px;
+	color: var(--white);
+
+}
+
+.sidebar {
+  background: var(--main-col);
   grid-row: 1/3;
 }
 
