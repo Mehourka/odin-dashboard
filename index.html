@@ -6,6 +6,7 @@
 	<title>Dashboard</title>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="js/script.js" defer></script>
 </head>
 <body>
 	<div class="main">
@@ -33,8 +34,33 @@
 			</div>
 		</div>
 		<div class="header">
-			<div class="layer">Layer 1</div>
-			<div class="layer">Layer 2</div>
+			<div class="line top">
+				<form class="header-search">
+					<button type="submit" id="search-btn"><i class="material-icons">search</i></button>
+					<input type="search" name="search" id="search">
+				</form>
+				<div class="header-profile">
+					<i class="material-icons">notifications</i>
+					<img src="img/profile.png" alt="profile icon" class="profile-icon small">
+					<span class="user-name bold"></span>
+				</div>
+			</div>
+
+			<div class="line bottom">
+
+				<div class="header-greeting">
+					<img src="img/profile.png" alt="profile icon" class="profile-icon">
+					<div class="greeting">
+						<p class="smaller-font">Hi there,</p>
+						<p class="larger-font bold"><span class="user-name"></span> (<span class="user-handle"></span>)</p>
+					</div>
+				</div>
+
+				<div class="header-buttons">
+					<button>New</button><button>Upload</button><button>Share</button>
+				</div>
+
+			</div>
 		</div>
 		<div class="dashboard">
 			<div class="projects"></div>
